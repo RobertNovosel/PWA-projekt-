@@ -1,0 +1,207 @@
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding: 10px 20px; 
+    font-size: 25px; 
+    text-decoration: none;
+    color: black;
+    background-color: #f2f2f2
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    padding: 8px;
+    
+  }
+
+header{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 3%;
+    display: flex;
+   
+}
+
+.formula_logo{
+    margin-top: 3.2%;
+    margin-right: 2%;
+}
+
+
+.card_text{
+    width :85%;
+    height: auto;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   
+}
+
+.grid-item{
+    width: 100%;
+    margin: 0px auto;
+
+}
+
+.article-container {
+    max-width: 80%; /* Maksimalna širina 80% prozora */
+    margin: 0 auto; /* Centriranje po horizontali */
+}
+
+footer{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 3%;
+}
+
+
+.forma_box{
+    text-align: center;
+ 
+   
+}
+
+/* Opći stilizirani container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Stilizacija za naslov */
+.news-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Stilizacija za container kartica */
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Kartice počinju s lijeve strane */
+}
+
+/* Stilizacija za kartice vijesti */
+.news-item {
+    background-color: #f9f9f9; /* Boja pozadine */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-right: 20px; /* Prostor između kartica */
+    margin-bottom: 20px; /* Prostor ispod kartica */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    width: calc(33.33% - 20px); /* 33.33% širine sa 20px prostora između */
+    box-sizing: border-box; /* Uključuje padding i border u izračun širine */
+}
+
+.news-item:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Za posljednju karticu u redu, ukloniti margin-right */
+.news-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+@media (max-width: 992px) {
+    .news-item {
+        width: calc(50% - 20px); /* Dvije kartice po redu za manje ekrane */
+    }
+
+    .news-item:nth-child(2n) {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .news-item {
+        width: 100%; /* Jedna kartica po redu za mobilne uređaje */
+        margin-right: 0;
+    }
+}
+
+/* Stilizacija naslova i poveznice */
+.news-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.news-item p {
+    margin-bottom: 10px;
+}
+
+.news-item a {
+    color: #007bff; /* Boja poveznice */
+    text-decoration: none;
+}
+
+.news-item a:hover {
+    text-decoration: underline;
+}
+
+
+.error {
+    color: red;
+    display: block;
+    margin-top: 5px;
+    text-align: left;
+}
+input.error, textarea.error, select.error {
+    border-color: red;
+    box-shadow: none;
+}
+.forma_box {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="submit"] {
+    width: auto;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #4cae4c;
+}
